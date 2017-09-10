@@ -8,6 +8,38 @@
 
 import Foundation
 
+
+// MARK: - init
+extension Date{
+    init?(_ date: String, format: String = "yyyy-MM-dd HH:mm:ss") {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        if let formatDate = dateFormatter.date(from: date) {
+            self.init(timeIntervalSince1970: formatDate.timeIntervalSince1970)
+        } else {
+            return nil
+        }
+    }
+    
+    
+    init?(year: Int,month: Int,day: Int,hour:Int = 0,minute: Int = 0,second: Int = 0) {
+        var components = DateComponents()
+        components.year = year
+        components.month = month
+        components.day = day
+        components.hour = hour
+        components.minute = minute
+        components.second = second
+        if let date = Calendar.current.date(from: components) {
+            self.init(timeIntervalSince1970: date.timeIntervalSince1970)
+        } else {
+            return nil
+        }
+    }
+}
+
+
+// MARK: - computer property
 extension Date{
     
     var year: Int {
@@ -86,17 +118,11 @@ extension Date{
         
         return calendar.date(from: comp)!
     }
-    
-    
-    init(_ date: String, format: String = "yyyy-MM-dd HH:mm:ss") {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = format
-        if let formatDate = dateFormatter.date(from: date) {
-            self.init(timeIntervalSince1970: formatDate.timeIntervalSince1970)
-        } else {
-            self.init()
-        }
-    }
+}
+
+
+// MARK: - format and transfrom
+extension Date{
     
     func toString(with format:String = "yyyy-MM-dd HH:mm:ss") -> String {
         let dateFormatter = DateFormatter()
@@ -105,7 +131,10 @@ extension Date{
     }
     
     static func format(date: String,inFormat: String = "yyyy/MM/dd HH:mm:ss",outFormat: String = "yyyy-MM-dd HH:mm:ss") -> String? {
-        let date = Date(date, format: inFormat)
-        return date.toString(with: outFormat)
+        if let date = Date(date, format: inFormat){
+            return date.toString(with: outFormat)
+        } else {
+            return nil
+        }
     }
 }
