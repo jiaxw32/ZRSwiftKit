@@ -8,10 +8,26 @@
 
 import Foundation
 
+public let dateFormatYear = "yyyy"
+
+let dateFormatMonth = "MM"
+
+let dateFormatDay = "dd"
+
+public let dateFormatNormal = "yyyy-MM-dd"
+
+public let dateFormatSlash = "yyyy/MM/dd"
+
+public let datetimeFormatNormal = "yyyy-MM-dd HH:mm:ss"
+
+public let dateTimeFormatSlash = "yyyy/MM/dd HH:mm:ss"
+
+
+
 
 // MARK: - init
 extension Date{
-    init?(_ date: String, format: String = "yyyy-MM-dd HH:mm:ss") {
+    init?(_ date: String, format: String = datetimeFormatNormal) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
         if let formatDate = dateFormatter.date(from: date) {
@@ -37,7 +53,6 @@ extension Date{
         }
     }
 }
-
 
 // MARK: - computer property
 extension Date{
@@ -124,13 +139,13 @@ extension Date{
 // MARK: - format and transfrom
 extension Date{
     
-    func toString(with format:String = "yyyy-MM-dd HH:mm:ss") -> String {
+    func toString(with format:String = datetimeFormatNormal) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: self)
     }
     
-    static func format(date: String,inFormat: String = "yyyy/MM/dd HH:mm:ss",outFormat: String = "yyyy-MM-dd HH:mm:ss") -> String? {
+    static func format(date: String,inFormat: String = dateTimeFormatSlash,outFormat: String = datetimeFormatNormal) -> String? {
         if let date = Date(date, format: inFormat){
             return date.toString(with: outFormat)
         } else {

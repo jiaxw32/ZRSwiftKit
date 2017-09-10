@@ -37,10 +37,6 @@ class Date_ExtensionTests: XCTestCase {
     
     let lastDayOfMonth = "2017-09-30"
     
-    let dateFormat = "yyyy-MM-dd"
-    
-    let datetimeFormat = "yyyy-MM-dd HH:mm:ss"
-    
     
     override func setUp() {
         super.setUp()
@@ -57,13 +53,13 @@ class Date_ExtensionTests: XCTestCase {
         XCTAssertNotNil(date1)
         
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        formatter.dateFormat = datetimeFormatNormal
         let date2 = formatter.date(from: datetime)
         
         XCTAssertEqual(date1, date2)
         
         let date3 = Date("time")
-        XCTAssertNil(date3,"date3 should be nil")
+        XCTAssertNil(date3,"the result should be nil")
         
     }
     
@@ -75,7 +71,7 @@ class Date_ExtensionTests: XCTestCase {
         XCTAssertNotNil(date2,"date shouldn't be nil")
         
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        formatter.dateFormat = datetimeFormatNormal
         let date3 = formatter.date(from: datetime)
         
         XCTAssertEqual(date2, date3,"date2 should be equal to date3")
@@ -83,85 +79,86 @@ class Date_ExtensionTests: XCTestCase {
     
     func testYear() {
         let date = Date(datetime)
-        XCTAssertTrue(date!.year == 2017)
+        XCTAssertTrue(date!.year == year,"year of the date '\(datetime)' should be equal \(year)")
     }
     
     func testMonth() {
         let date = Date(datetime)
-        XCTAssertTrue(date!.month == 9)
+        XCTAssertTrue(date!.month == month,"month of the date '\(datetime)' should be equal \(month)")
     }
     
     func testDay() {
         let date = Date(datetime)!
-        XCTAssertTrue(date.day == 7)
+        XCTAssertTrue(date.day == day,"day of the date '\(datetime)' should be equal \(day)")
     }
     
     func testHour() {
         let date = Date(datetime)!
-        XCTAssertTrue(date.hour == 13)
+        XCTAssertTrue(date.hour == hour,"hour of the date '\(datetime)' should be equal \(hour)")
     }
     
     func testMinute() {
         let date = Date(datetime)!
-        XCTAssertTrue(date.minute == 14)
+        XCTAssertTrue(date.minute == minute,"minute of the date '\(datetime)' should be equal to \(minute)")
     }
     
     func testSecond() {
         let date = Date(datetime)!
-        XCTAssertTrue(date.second == 15)
+        XCTAssertTrue(date.second == second,"second of the date '\(datetime)' should be equal to \(second)")
     }
     
     func testWeekDay() {
         let date = Date(datetime)
-        XCTAssertTrue(date!.weekDay == 5)
+        XCTAssertTrue(date!.weekDay == 5,"week day of the date '\(datetime)' should be five")
     }
     
     func testCnWeekDay() {
         let date = Date(datetime)!
         XCTAssertNotNil(date.cnWeekDay)
-        XCTAssertTrue(date.cnWeekDay == "星期四")
+        XCTAssertTrue(date.cnWeekDay == "星期四","weekday of the date '\(datetime)' should be '星期四'")
     }
     
     func testWeekOfMonth() -> Void {
         let date = Date(datetime)!
-        XCTAssertTrue(date.weekOfMonth == 2)    //九月第二周
+        XCTAssertTrue(date.weekOfMonth == 2,"weekOfMonth of the date '\(datetime)' should be two")    //九月第二周
     }
     
     func testFirstDayOfMonth() -> Void {
         let date = Date(datetime)!.firstDayOfMonth
         
         let formatter = DateFormatter()
-        formatter.dateFormat = dateFormat
+        formatter.dateFormat = dateFormatNormal
         let strDate = formatter.string(from: date)
         
-        XCTAssertEqual(strDate, firstDayOfMonth)
+        XCTAssertEqual(strDate, firstDayOfMonth,"the date's (\(datetime)) first day of the month of the date '\(datetime)' should be \(strDate)")
     }
     
     func testLastDayOfMonth() -> Void {
         let date = Date(datetime)!.lastDayOfMonth
         
         let formatter = DateFormatter()
-        formatter.dateFormat = dateFormat
+        formatter.dateFormat = dateFormatNormal
         let strDate = formatter.string(from: date)
         
-        XCTAssertEqual(strDate, lastDayOfMonth)
+        XCTAssertEqual(strDate, lastDayOfMonth,"the date's (\(datetime)) last day of the month should be \(strDate)")
     }
     
     func testDateToString() -> Void {
         let date = Date(datetime)!
-        let strDate = date.toString(with: dateFormat)
-        XCTAssertTrue(strDate == self.date)
+        let strDate = date.toString(with: dateFormatNormal)
+        XCTAssertTrue(strDate == self.date,"the format date string should be \(self.date)")
         
-        let strDatetime = date.toString(with: datetimeFormat)
-        XCTAssertTrue(strDatetime == datetime)
+        let strDatetime = date.toString(with: datetimeFormatNormal)
+        XCTAssertTrue(strDatetime == datetime,"the format datetime string should be \(datetime)")
     }
     
-    func tetDateFormat() -> Void {
-        let formatDatetime = Date.format(date: datetime)
-        XCTAssertTrue(formatDatetime == datetime2)
+    func testDateFormat() -> Void {
+        let formatDatetime = Date.format(date: datetime2)
+        XCTAssertNotNil(formatDatetime,"the result shouldn't be nil")
+        XCTAssertTrue(formatDatetime == datetime,"the result should be \(datetime)")
         
-        let formatDatetime2 = Date.format(date: datetime,inFormat: datetimeFormat,outFormat: dateFormat)
-        XCTAssertTrue(formatDatetime2 == date)
+        let formatDatetime2 = Date.format(date: datetime,inFormat: datetimeFormatNormal,outFormat: dateFormatNormal)
+        XCTAssertTrue(formatDatetime2 == date,"the result should be \(date)")
     }
     
     
