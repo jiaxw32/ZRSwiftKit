@@ -20,12 +20,16 @@ extension String{
         return range?.lowerBound
     }
     
-    func append(aString: String, with seperator: String) -> String {
+    func append(aString: String, with seperator: String, suffixSensitive: Bool = false) -> String {
         if self.characters.count == 0 {
             return aString
         } else {
             if aString.characters.count > 0 {
-                return self + seperator + aString
+                if suffixSensitive && self.hasSuffix(seperator) {
+                    return self + aString
+                } else {
+                    return self + seperator + aString
+                }
             } else {
                 return self
             }

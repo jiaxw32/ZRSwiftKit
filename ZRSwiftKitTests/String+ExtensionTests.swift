@@ -50,6 +50,10 @@ class String_ExtensionTests: XCTestCase {
         str = str.append(aString: "", with: "/")
         XCTAssertTrue(str == "usr/root", "the result should be 'usr/root'")
         
+        str += "/"
+        str = str.append(aString: "desktop", with: "/", suffixSensitive:true)
+        XCTAssertTrue(str == "usr/root/desktop", "the result should be 'usr/root'")
+        
     }
     
     
