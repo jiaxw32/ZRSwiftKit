@@ -33,13 +33,17 @@ class ZRPlaceholderTextView:  UITextView{
     
     override var text: String! {
         didSet {
-            setNeedsDisplay()
+            if self.text != oldValue {
+                setNeedsDisplay()
+            }
         }
     }
     
     override var attributedText: NSAttributedString! {
         didSet {
-            setNeedsDisplay()
+            if self.attributedText != oldValue {
+                setNeedsDisplay()
+            }
         }
     }
     
@@ -49,7 +53,7 @@ class ZRPlaceholderTextView:  UITextView{
         }
     }
     
-    override var contentInset: UIEdgeInsets {
+    override var textContainerInset: UIEdgeInsets {
         didSet {
             setNeedsDisplay()
         }
@@ -96,6 +100,18 @@ class ZRPlaceholderTextView:  UITextView{
             setNeedsDisplay()
         }
     }
+    
+    var maxCount: UInt? {
+        didSet{
+            setNeedsDisplay()
+        }
+    }
+    
+    var maxCountTextAttribute: [String:Any]? {
+        didSet{
+            setNeedsDisplay()
+        }
+    }
 
     //MARK: - override method
     
@@ -120,31 +136,54 @@ class ZRPlaceholderTextView:  UITextView{
             let placeholderRect = placeholderRectForBounds(bounds: rect)
             attributedPlaceholder!.draw(in: placeholderRect)
         }
+        
+        if maxCount != nil {
+            
+            if maxCountTextAttribute == nil {
+                var attributes = [String: Any]()
+                attributes[NSFontAttributeName] = font
+                attributes[NSForegroundColorAttributeName] = UIColor.init(white: 0.702, alpha: 1.0)
+                let paragraph = NSMutableParagraphStyle()
+                paragraph.alignment = .right
+                attributes[NSParagraphStyleAttributeName] = paragraph
+                maxCountTextAttribute = attributes
+            }
+            
+            let maxCountAttributeString = NSAttributedString(string: "\(text.characters.count)/\(maxCount!)", attributes: maxCountTextAttribute)
+            
+            maxCountAttributeString.draw(in: self.maxCountRectForBounds(bounds: rect))
+        }
     }
     
     //MARK: - custom method
     
-    func placeholderRectForBounds(bounds: CGRect) -> CGRect {
+    private func placeholderRectForBounds(bounds: CGRect) -> CGRect {
         var rect = UIEdgeInsetsInsetRect(bounds, contentInset)
-        if contentInset.left == 0 {
-            rect.origin.x += 8
-        }
-        rect.origin.y += 8
-        return rect
         
-//        if responds(to: #selector(getter: ZRPlaceholderTextView.textContainer)) {
-//            rect = UIEdgeInsetsInsetRect(rect, textContainerInset)
-//            let padding = textContainer.lineFragmentPadding
-//            rect.origin.x += padding
-//            rect.size.width -= padding * 2.0
-//        } else {
-//            if contentInset.left == 0 {
-//                rect.origin.x += 8
-//            }
-//            rect.origin.y += 8
-//        }
-//        
-//        return rect
+        if self.responds(to: #selector(getter: textContainer)) {
+            rect = UIEdgeInsetsInsetRect(rect, self.textContainerInset)
+            let padding = textContainer.lineFragmentPadding
+            rect.origin.x += padding
+            rect.size.width -= 2 * padding
+        } else {
+            if contentInset.left == 0 {
+                rect.origin.x += 6.0
+            }
+        }
+        return rect
+    }
+    
+    func maxCountRectForBounds(bounds: CGRect) -> CGRect {
+        
+        
+        let padding: CGFloat = 16
+        
+        let font = maxCountTextAttribute![NSFontAttributeName] as? UIFont
+        let fontSize = font?.pointSize ?? 16
+        let y = bounds.size.height - padding - fontSize + contentOffset.y
+
+        let width = bounds.size.width - padding * 2
+        return CGRect(x: padding, y: y, width: width, height: fontSize)
     }
     
     func initialize() -> Void {
@@ -152,6 +191,13 @@ class ZRPlaceholderTextView:  UITextView{
     }
     
     func textChanged(notification: Notification) -> Void {
+        
+        
+        if maxCount != nil && UInt(text.characters.count) > maxCount! {
+            let startIndex = text.startIndex
+            let lastIndex = text.index(text.startIndex, offsetBy: Int(maxCount!))
+            text = text[startIndex..<lastIndex]
+        }
         setNeedsDisplay()
     }
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE609BF81F6B731800A494E4 /* PlaceholderTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE609BF71F6B731800A494E4 /* PlaceholderTextViewController.swift */; };
 		DEC1878F1F614BD60026165F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1878E1F614BD60026165F /* AppDelegate.swift */; };
 		DEC187911F614BD60026165F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC187901F614BD60026165F /* ViewController.swift */; };
 		DEC187941F614BD60026165F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC187921F614BD60026165F /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE609BF71F6B731800A494E4 /* PlaceholderTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderTextViewController.swift; sourceTree = "<group>"; };
 		DEC1878B1F614BD60026165F /* ZRSwiftKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZRSwiftKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC1878E1F614BD60026165F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEC187901F614BD60026165F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE609BF91F6B733000A494E4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DEFEF71A1F65659700986FDE /* ZRPlaceholderTextView.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		DE609BFA1F6B734000A494E4 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				DE609BF71F6B731800A494E4 /* PlaceholderTextViewController.swift */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+		DE609BFB1F6B736200A494E4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEC187951F614BD60026165F /* Assets.xcassets */,
+				DEC1878E1F614BD60026165F /* AppDelegate.swift */,
+				DEC1879A1F614BD60026165F /* Info.plist */,
+				DEC187971F614BD60026165F /* LaunchScreen.storyboard */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
 		DEC187821F614BD60026165F = {
 			isa = PBXGroup;
 			children = (
@@ -87,14 +116,12 @@
 		DEC1878D1F614BD60026165F /* ZRSwiftKit */ = {
 			isa = PBXGroup;
 			children = (
-				DEC1878E1F614BD60026165F /* AppDelegate.swift */,
-				DEC187901F614BD60026165F /* ViewController.swift */,
-				DEC187921F614BD60026165F /* Main.storyboard */,
-				DEC187951F614BD60026165F /* Assets.xcassets */,
-				DEC187971F614BD60026165F /* LaunchScreen.storyboard */,
-				DEC1879A1F614BD60026165F /* Info.plist */,
+				DE609BFA1F6B734000A494E4 /* Demo */,
+				DE609BFB1F6B736200A494E4 /* Support Files */,
 				DEFEF7171F6524F400986FDE /* Extension */,
-				DEFEF71A1F65659700986FDE /* ZRPlaceholderTextView.swift */,
+				DEC187921F614BD60026165F /* Main.storyboard */,
+				DE609BF91F6B733000A494E4 /* UI */,
+				DEC187901F614BD60026165F /* ViewController.swift */,
 			);
 			path = ZRSwiftKit;
 			sourceTree = "<group>";
@@ -225,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEFEF7161F65232200986FDE /* String+Extension.swift in Sources */,
+				DE609BF81F6B731800A494E4 /* PlaceholderTextViewController.swift in Sources */,
 				DEC187911F614BD60026165F /* ViewController.swift in Sources */,
 				DEC1878F1F614BD60026165F /* AppDelegate.swift in Sources */,
 				DEFEF71B1F65659700986FDE /* ZRPlaceholderTextView.swift in Sources */,
