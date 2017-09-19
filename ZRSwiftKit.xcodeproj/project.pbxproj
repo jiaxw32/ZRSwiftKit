@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE609BF81F6B731800A494E4 /* PlaceholderTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE609BF71F6B731800A494E4 /* PlaceholderTextViewController.swift */; };
+		8CF5A7A250BAAF86AF2FC07A /* Pods_ZRSwiftKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17E2B42DCB66A4958D200C0 /* Pods_ZRSwiftKit.framework */; };
+		D9F36AD5DE8CA78FAD6B527A /* Pods_ZRSwiftKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970652CF36C8E1EFBA03B57D /* Pods_ZRSwiftKitTests.framework */; };
+		DE4CF43B1F70FD5900FC72DB /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF4391F70FD5900FC72DB /* Date+Extension.swift */; };
+		DE4CF43C1F70FD5900FC72DB /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF43A1F70FD5900FC72DB /* String+Extension.swift */; };
+		DE4CF43E1F70FD9000FC72DB /* ZRPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF43D1F70FD9000FC72DB /* ZRPlaceholderTextView.swift */; };
+		DE4CF4481F70FDB200FC72DB /* PlaceholderTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF4401F70FDB200FC72DB /* PlaceholderTextViewController.swift */; };
+		DE4CF4491F70FDB200FC72DB /* ArtistHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF4421F70FDB200FC72DB /* ArtistHandler.swift */; };
+		DE4CF44A1F70FDB200FC72DB /* ArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF4431F70FDB200FC72DB /* ArtistModel.swift */; };
+		DE4CF44B1F70FDB200FC72DB /* artists.json in Resources */ = {isa = PBXBuildFile; fileRef = DE4CF4441F70FDB200FC72DB /* artists.json */; };
+		DE4CF44D1F70FDB200FC72DB /* MSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF4461F70FDB200FC72DB /* MSTableViewCell.swift */; };
+		DE4CF44E1F70FDB200FC72DB /* MSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF4471F70FDB200FC72DB /* MSTableViewController.swift */; };
 		DEC1878F1F614BD60026165F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1878E1F614BD60026165F /* AppDelegate.swift */; };
 		DEC187911F614BD60026165F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC187901F614BD60026165F /* ViewController.swift */; };
 		DEC187941F614BD60026165F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC187921F614BD60026165F /* Main.storyboard */; };
 		DEC187961F614BD60026165F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEC187951F614BD60026165F /* Assets.xcassets */; };
 		DEC187991F614BD60026165F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC187971F614BD60026165F /* LaunchScreen.storyboard */; };
 		DEC187A41F614BD60026165F /* ZRSwiftKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC187A31F614BD60026165F /* ZRSwiftKitTests.swift */; };
-		DEC187AF1F614E9A0026165F /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC187AE1F614E9A0026165F /* Date+Extension.swift */; };
 		DEC187B11F614EF20026165F /* Date+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC187B01F614EF20026165F /* Date+ExtensionTests.swift */; };
-		DEFEF7161F65232200986FDE /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFEF7151F65232200986FDE /* String+Extension.swift */; };
 		DEFEF7191F652DCD00986FDE /* String+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFEF7181F652DCD00986FDE /* String+ExtensionTests.swift */; };
-		DEFEF71B1F65659700986FDE /* ZRPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFEF71A1F65659700986FDE /* ZRPlaceholderTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +39,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DE609BF71F6B731800A494E4 /* PlaceholderTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderTextViewController.swift; sourceTree = "<group>"; };
+		347493EE651C1BE1B457EA9C /* Pods-ZRSwiftKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZRSwiftKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZRSwiftKit/Pods-ZRSwiftKit.release.xcconfig"; sourceTree = "<group>"; };
+		6D71143864F92412FFEDA85B /* Pods-ZRSwiftKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZRSwiftKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZRSwiftKitTests/Pods-ZRSwiftKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		970652CF36C8E1EFBA03B57D /* Pods_ZRSwiftKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZRSwiftKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A575CED9F679CF3FBF8B53C8 /* Pods-ZRSwiftKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZRSwiftKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZRSwiftKit/Pods-ZRSwiftKit.debug.xcconfig"; sourceTree = "<group>"; };
+		DE4CF4391F70FD5900FC72DB /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		DE4CF43A1F70FD5900FC72DB /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		DE4CF43D1F70FD9000FC72DB /* ZRPlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZRPlaceholderTextView.swift; sourceTree = "<group>"; };
+		DE4CF4401F70FDB200FC72DB /* PlaceholderTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderTextViewController.swift; sourceTree = "<group>"; };
+		DE4CF4421F70FDB200FC72DB /* ArtistHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistHandler.swift; sourceTree = "<group>"; };
+		DE4CF4431F70FDB200FC72DB /* ArtistModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistModel.swift; sourceTree = "<group>"; };
+		DE4CF4441F70FDB200FC72DB /* artists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artists.json; sourceTree = "<group>"; };
+		DE4CF4461F70FDB200FC72DB /* MSTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTableViewCell.swift; sourceTree = "<group>"; };
+		DE4CF4471F70FDB200FC72DB /* MSTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTableViewController.swift; sourceTree = "<group>"; };
 		DEC1878B1F614BD60026165F /* ZRSwiftKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZRSwiftKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC1878E1F614BD60026165F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEC187901F614BD60026165F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,11 +62,10 @@
 		DEC1879F1F614BD60026165F /* ZRSwiftKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZRSwiftKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC187A31F614BD60026165F /* ZRSwiftKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZRSwiftKitTests.swift; sourceTree = "<group>"; };
 		DEC187A51F614BD60026165F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEC187AE1F614E9A0026165F /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		DEC187B01F614EF20026165F /* Date+ExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+ExtensionTests.swift"; sourceTree = "<group>"; };
-		DEFEF7151F65232200986FDE /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		DEFEF7181F652DCD00986FDE /* String+ExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ExtensionTests.swift"; sourceTree = "<group>"; };
-		DEFEF71A1F65659700986FDE /* ZRPlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZRPlaceholderTextView.swift; sourceTree = "<group>"; };
+		E969E5F00C1AB234869E41FD /* Pods-ZRSwiftKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZRSwiftKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZRSwiftKitTests/Pods-ZRSwiftKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		F17E2B42DCB66A4958D200C0 /* Pods_ZRSwiftKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZRSwiftKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CF5A7A250BAAF86AF2FC07A /* Pods_ZRSwiftKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,31 +81,75 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9F36AD5DE8CA78FAD6B527A /* Pods_ZRSwiftKitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		515CDD53A0E6568AA717B2B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F17E2B42DCB66A4958D200C0 /* Pods_ZRSwiftKit.framework */,
+				970652CF36C8E1EFBA03B57D /* Pods_ZRSwiftKitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF17239EA06E81BE020A45B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A575CED9F679CF3FBF8B53C8 /* Pods-ZRSwiftKit.debug.xcconfig */,
+				347493EE651C1BE1B457EA9C /* Pods-ZRSwiftKit.release.xcconfig */,
+				6D71143864F92412FFEDA85B /* Pods-ZRSwiftKitTests.debug.xcconfig */,
+				E969E5F00C1AB234869E41FD /* Pods-ZRSwiftKitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE4CF43F1F70FDB200FC72DB /* PlaceholderTextView */ = {
+			isa = PBXGroup;
+			children = (
+				DE4CF4401F70FDB200FC72DB /* PlaceholderTextViewController.swift */,
+			);
+			path = PlaceholderTextView;
+			sourceTree = "<group>";
+		};
+		DE4CF4411F70FDB200FC72DB /* SelfSizingTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE4CF4421F70FDB200FC72DB /* ArtistHandler.swift */,
+				DE4CF4431F70FDB200FC72DB /* ArtistModel.swift */,
+				DE4CF4461F70FDB200FC72DB /* MSTableViewCell.swift */,
+				DE4CF4471F70FDB200FC72DB /* MSTableViewController.swift */,
+			);
+			path = SelfSizingTableViewCell;
+			sourceTree = "<group>";
+		};
 		DE609BF91F6B733000A494E4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				DEFEF71A1F65659700986FDE /* ZRPlaceholderTextView.swift */,
+				DE4CF43D1F70FD9000FC72DB /* ZRPlaceholderTextView.swift */,
 			);
 			name = UI;
-			sourceTree = "<group>";
+			path = ZRSwiftKit/UI;
+			sourceTree = SOURCE_ROOT;
 		};
 		DE609BFA1F6B734000A494E4 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				DE609BF71F6B731800A494E4 /* PlaceholderTextViewController.swift */,
+				DE4CF43F1F70FDB200FC72DB /* PlaceholderTextView */,
+				DE4CF4411F70FDB200FC72DB /* SelfSizingTableViewCell */,
 			);
 			name = Demo;
-			sourceTree = "<group>";
+			path = ZRSwiftKit/Demo;
+			sourceTree = SOURCE_ROOT;
 		};
 		DE609BFB1F6B736200A494E4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				DE4CF4441F70FDB200FC72DB /* artists.json */,
 				DEC187951F614BD60026165F /* Assets.xcassets */,
 				DEC1878E1F614BD60026165F /* AppDelegate.swift */,
 				DEC1879A1F614BD60026165F /* Info.plist */,
@@ -101,6 +164,8 @@
 				DEC1878D1F614BD60026165F /* ZRSwiftKit */,
 				DEC187A21F614BD60026165F /* ZRSwiftKitTests */,
 				DEC1878C1F614BD60026165F /* Products */,
+				CF17239EA06E81BE020A45B0 /* Pods */,
+				515CDD53A0E6568AA717B2B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,11 +205,12 @@
 		DEFEF7171F6524F400986FDE /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				DEC187AE1F614E9A0026165F /* Date+Extension.swift */,
-				DEFEF7151F65232200986FDE /* String+Extension.swift */,
+				DE4CF4391F70FD5900FC72DB /* Date+Extension.swift */,
+				DE4CF43A1F70FD5900FC72DB /* String+Extension.swift */,
 			);
 			name = Extension;
-			sourceTree = "<group>";
+			path = ZRSwiftKit/Extension;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -153,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEC187A81F614BD60026165F /* Build configuration list for PBXNativeTarget "ZRSwiftKit" */;
 			buildPhases = (
+				09FD88620789C80A2AAA24F0 /* [CP] Check Pods Manifest.lock */,
 				DEC187871F614BD60026165F /* Sources */,
 				DEC187881F614BD60026165F /* Frameworks */,
 				DEC187891F614BD60026165F /* Resources */,
+				9D4DB7BC954A51E20DD36375 /* [CP] Embed Pods Frameworks */,
+				017265F3DDD698F0C4788C81 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +239,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEC187AB1F614BD60026165F /* Build configuration list for PBXNativeTarget "ZRSwiftKitTests" */;
 			buildPhases = (
+				32240B6BB575CFC2E42B3DEA /* [CP] Check Pods Manifest.lock */,
 				DEC1879B1F614BD60026165F /* Sources */,
 				DEC1879C1F614BD60026165F /* Frameworks */,
 				DEC1879D1F614BD60026165F /* Resources */,
+				B0B9162D877F875EA4381E5B /* [CP] Embed Pods Frameworks */,
+				09F753426AD5BBB62220FB90 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +305,7 @@
 			files = (
 				DEC187991F614BD60026165F /* LaunchScreen.storyboard in Resources */,
 				DEC187961F614BD60026165F /* Assets.xcassets in Resources */,
+				DE4CF44B1F70FDB200FC72DB /* artists.json in Resources */,
 				DEC187941F614BD60026165F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,17 +319,114 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		017265F3DDD698F0C4788C81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZRSwiftKit/Pods-ZRSwiftKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		09F753426AD5BBB62220FB90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZRSwiftKitTests/Pods-ZRSwiftKitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		09FD88620789C80A2AAA24F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		32240B6BB575CFC2E42B3DEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D4DB7BC954A51E20DD36375 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZRSwiftKit/Pods-ZRSwiftKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0B9162D877F875EA4381E5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZRSwiftKitTests/Pods-ZRSwiftKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DEC187871F614BD60026165F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEFEF7161F65232200986FDE /* String+Extension.swift in Sources */,
-				DE609BF81F6B731800A494E4 /* PlaceholderTextViewController.swift in Sources */,
+				DE4CF43C1F70FD5900FC72DB /* String+Extension.swift in Sources */,
+				DE4CF4481F70FDB200FC72DB /* PlaceholderTextViewController.swift in Sources */,
 				DEC187911F614BD60026165F /* ViewController.swift in Sources */,
+				DE4CF4491F70FDB200FC72DB /* ArtistHandler.swift in Sources */,
+				DE4CF44A1F70FDB200FC72DB /* ArtistModel.swift in Sources */,
 				DEC1878F1F614BD60026165F /* AppDelegate.swift in Sources */,
-				DEFEF71B1F65659700986FDE /* ZRPlaceholderTextView.swift in Sources */,
-				DEC187AF1F614E9A0026165F /* Date+Extension.swift in Sources */,
+				DE4CF43E1F70FD9000FC72DB /* ZRPlaceholderTextView.swift in Sources */,
+				DE4CF44E1F70FDB200FC72DB /* MSTableViewController.swift in Sources */,
+				DE4CF44D1F70FDB200FC72DB /* MSTableViewCell.swift in Sources */,
+				DE4CF43B1F70FD5900FC72DB /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +567,7 @@
 		};
 		DEC187A91F614BD60026165F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A575CED9F679CF3FBF8B53C8 /* Pods-ZRSwiftKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8MREZQFL24;
@@ -411,6 +582,7 @@
 		};
 		DEC187AA1F614BD60026165F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 347493EE651C1BE1B457EA9C /* Pods-ZRSwiftKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8MREZQFL24;
@@ -425,6 +597,7 @@
 		};
 		DEC187AC1F614BD60026165F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D71143864F92412FFEDA85B /* Pods-ZRSwiftKitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -440,6 +613,7 @@
 		};
 		DEC187AD1F614BD60026165F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E969E5F00C1AB234869E41FD /* Pods-ZRSwiftKitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
