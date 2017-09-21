@@ -18,6 +18,9 @@
 		DE4CF44B1F70FDB200FC72DB /* artists.json in Resources */ = {isa = PBXBuildFile; fileRef = DE4CF4441F70FDB200FC72DB /* artists.json */; };
 		DE4CF44D1F70FDB200FC72DB /* MSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF4461F70FDB200FC72DB /* MSTableViewCell.swift */; };
 		DE4CF44E1F70FDB200FC72DB /* MSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF4471F70FDB200FC72DB /* MSTableViewController.swift */; };
+		DE4CF4511F73A0B200FC72DB /* FaceItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF4501F73A0B200FC72DB /* FaceItViewController.swift */; };
+		DE4CF4531F73A0C400FC72DB /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF4521F73A0C400FC72DB /* FaceView.swift */; };
+		DE4CF4551F73A13C00FC72DB /* FacalExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF4541F73A13C00FC72DB /* FacalExpression.swift */; };
 		DEC1878F1F614BD60026165F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1878E1F614BD60026165F /* AppDelegate.swift */; };
 		DEC187911F614BD60026165F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC187901F614BD60026165F /* ViewController.swift */; };
 		DEC187941F614BD60026165F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC187921F614BD60026165F /* Main.storyboard */; };
@@ -52,6 +55,9 @@
 		DE4CF4441F70FDB200FC72DB /* artists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artists.json; sourceTree = "<group>"; };
 		DE4CF4461F70FDB200FC72DB /* MSTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTableViewCell.swift; sourceTree = "<group>"; };
 		DE4CF4471F70FDB200FC72DB /* MSTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSTableViewController.swift; sourceTree = "<group>"; };
+		DE4CF4501F73A0B200FC72DB /* FaceItViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceItViewController.swift; sourceTree = "<group>"; };
+		DE4CF4521F73A0C400FC72DB /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		DE4CF4541F73A13C00FC72DB /* FacalExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacalExpression.swift; sourceTree = "<group>"; };
 		DEC1878B1F614BD60026165F /* ZRSwiftKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZRSwiftKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC1878E1F614BD60026165F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEC187901F614BD60026165F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +133,16 @@
 			path = SelfSizingTableViewCell;
 			sourceTree = "<group>";
 		};
+		DE4CF44F1F73A09600FC72DB /* FaceIt */ = {
+			isa = PBXGroup;
+			children = (
+				DE4CF4501F73A0B200FC72DB /* FaceItViewController.swift */,
+				DE4CF4521F73A0C400FC72DB /* FaceView.swift */,
+				DE4CF4541F73A13C00FC72DB /* FacalExpression.swift */,
+			);
+			path = FaceIt;
+			sourceTree = "<group>";
+		};
 		DE609BF91F6B733000A494E4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +155,7 @@
 		DE609BFA1F6B734000A494E4 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				DE4CF44F1F73A09600FC72DB /* FaceIt */,
 				DE4CF43F1F70FDB200FC72DB /* PlaceholderTextView */,
 				DE4CF4411F70FDB200FC72DB /* SelfSizingTableViewCell */,
 			);
@@ -423,10 +440,13 @@
 				DE4CF4491F70FDB200FC72DB /* ArtistHandler.swift in Sources */,
 				DE4CF44A1F70FDB200FC72DB /* ArtistModel.swift in Sources */,
 				DEC1878F1F614BD60026165F /* AppDelegate.swift in Sources */,
+				DE4CF4551F73A13C00FC72DB /* FacalExpression.swift in Sources */,
 				DE4CF43E1F70FD9000FC72DB /* ZRPlaceholderTextView.swift in Sources */,
 				DE4CF44E1F70FDB200FC72DB /* MSTableViewController.swift in Sources */,
 				DE4CF44D1F70FDB200FC72DB /* MSTableViewCell.swift in Sources */,
+				DE4CF4511F73A0B200FC72DB /* FaceItViewController.swift in Sources */,
 				DE4CF43B1F70FD5900FC72DB /* Date+Extension.swift in Sources */,
+				DE4CF4531F73A0C400FC72DB /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,36 +23,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkv-uW-Kbn">
-                                <rect key="frame" x="67.5" y="301.5" width="240" height="64"/>
+                                <rect key="frame" x="68" y="124" width="240" height="64"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="VFx-KP-NmD"/>
-                                    <constraint firstAttribute="height" constant="64" id="rQD-H3-Jg1"/>
-                                </constraints>
                                 <state key="normal" title="PlaceholderTextView"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="64I-MC-Yt6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcf-zW-bvT">
-                                <rect key="frame" x="67" y="411" width="240" height="64"/>
+                                <rect key="frame" x="67" y="233" width="240" height="64"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="j6z-hk-C5Z"/>
-                                    <constraint firstAttribute="height" constant="64" id="sFb-VJ-bAl"/>
+                                    <constraint firstAttribute="height" constant="64" id="pgu-EB-YJm"/>
                                 </constraints>
                                 <state key="normal" title="SelfSizingTableViewCell"/>
                                 <connections>
                                     <segue destination="RQJ-D6-ha4" kind="show" id="Akv-oZ-4Gl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvF-ge-yBd">
+                                <rect key="frame" x="67" y="342" width="240" height="64"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="FaceItDemo"/>
+                                <connections>
+                                    <segue destination="L2o-yv-dky" kind="show" identifier="show FaceIt ViewController" id="53x-ly-U88"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pcf-zW-bvT" firstAttribute="centerX" secondItem="bkv-uW-Kbn" secondAttribute="centerX" id="7Ch-RQ-Xc6"/>
-                            <constraint firstItem="bkv-uW-Kbn" firstAttribute="centerY" secondItem="4Pl-w3-aUv" secondAttribute="centerY" id="nFz-aZ-TCE"/>
-                            <constraint firstItem="bkv-uW-Kbn" firstAttribute="centerX" secondItem="4Pl-w3-aUv" secondAttribute="centerX" id="vUY-re-AAe"/>
-                            <constraint firstItem="pcf-zW-bvT" firstAttribute="top" secondItem="bkv-uW-Kbn" secondAttribute="bottom" constant="45.5" id="w6A-MG-4Ka"/>
+                            <constraint firstItem="bkv-uW-Kbn" firstAttribute="centerX" secondItem="4Pl-w3-aUv" secondAttribute="centerX" id="8DV-iv-Amr"/>
+                            <constraint firstItem="pcf-zW-bvT" firstAttribute="leading" secondItem="4Pl-w3-aUv" secondAttribute="leadingMargin" constant="51" id="Fvn-O3-y98"/>
+                            <constraint firstItem="pcf-zW-bvT" firstAttribute="trailing" secondItem="WvF-ge-yBd" secondAttribute="trailing" id="IFa-JV-OtH"/>
+                            <constraint firstItem="pcf-zW-bvT" firstAttribute="top" secondItem="bkv-uW-Kbn" secondAttribute="bottom" constant="45" id="IpX-Lk-mlI"/>
+                            <constraint firstItem="WvF-ge-yBd" firstAttribute="top" secondItem="pcf-zW-bvT" secondAttribute="bottom" constant="45" id="LAX-mT-He1"/>
+                            <constraint firstItem="pcf-zW-bvT" firstAttribute="height" secondItem="bkv-uW-Kbn" secondAttribute="height" id="Lrz-F6-U8b"/>
+                            <constraint firstItem="WvF-ge-yBd" firstAttribute="height" secondItem="pcf-zW-bvT" secondAttribute="height" id="ToT-yp-v8o"/>
+                            <constraint firstItem="pcf-zW-bvT" firstAttribute="centerX" secondItem="4Pl-w3-aUv" secondAttribute="centerX" id="btP-W9-4qA"/>
+                            <constraint firstItem="bkv-uW-Kbn" firstAttribute="top" secondItem="IaY-s2-J7N" secondAttribute="bottom" constant="60" id="dKL-yD-KbT"/>
+                            <constraint firstItem="bkv-uW-Kbn" firstAttribute="leading" secondItem="4Pl-w3-aUv" secondAttribute="leadingMargin" constant="52" id="gGB-fF-w9Y"/>
+                            <constraint firstItem="pcf-zW-bvT" firstAttribute="leading" secondItem="WvF-ge-yBd" secondAttribute="leading" id="pkJ-eu-Cl2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Main" id="ESW-7K-TTL"/>
@@ -109,7 +119,53 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972" y="53.523238380809602"/>
+            <point key="canvasLocation" x="1142" y="-451"/>
+        </scene>
+        <!--Face It View Controller-->
+        <scene sceneID="FGx-0H-Nsq">
+            <objects>
+                <viewController id="L2o-yv-dky" customClass="FaceItViewController" customModule="ZRSwiftKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Ns-Cm-QMo"/>
+                        <viewControllerLayoutGuide type="bottom" id="MhI-GH-Rcp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Mx-c4-MKf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bf8-Dq-nDC" customClass="FaceView" customModule="ZRSwiftKit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scale">
+                                        <real key="value" value="0.90000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="eyesOpen" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="mouthCurvature">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bf8-Dq-nDC" firstAttribute="bottom" secondItem="MhI-GH-Rcp" secondAttribute="top" id="7ag-Jb-F65"/>
+                            <constraint firstAttribute="trailing" secondItem="Bf8-Dq-nDC" secondAttribute="trailing" id="O6P-gQ-sVk"/>
+                            <constraint firstItem="Bf8-Dq-nDC" firstAttribute="leading" secondItem="5Mx-c4-MKf" secondAttribute="leading" id="Uz5-nS-62O"/>
+                            <constraint firstItem="Bf8-Dq-nDC" firstAttribute="top" secondItem="5Mx-c4-MKf" secondAttribute="top" id="dn2-qX-kNv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="faceView" destination="Bf8-Dq-nDC" id="FhX-80-C8E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sVz-dM-PUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1142" y="928"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8AF-T1-gXX">
@@ -221,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eJl-JH-EQi" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="972" y="776"/>
+            <point key="canvasLocation" x="1142" y="206"/>
         </scene>
     </scenes>
 </document>
