@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8CF5A7A250BAAF86AF2FC07A /* Pods_ZRSwiftKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17E2B42DCB66A4958D200C0 /* Pods_ZRSwiftKit.framework */; };
 		D9F36AD5DE8CA78FAD6B527A /* Pods_ZRSwiftKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970652CF36C8E1EFBA03B57D /* Pods_ZRSwiftKitTests.framework */; };
+		DE33E6A61F751BE500C08339 /* TickleGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE33E6A51F751BE500C08339 /* TickleGestureRecognizer.swift */; };
 		DE4CF43B1F70FD5900FC72DB /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF4391F70FD5900FC72DB /* Date+Extension.swift */; };
 		DE4CF43C1F70FD5900FC72DB /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF43A1F70FD5900FC72DB /* String+Extension.swift */; };
 		DE4CF43E1F70FD9000FC72DB /* ZRPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF43D1F70FD9000FC72DB /* ZRPlaceholderTextView.swift */; };
@@ -21,6 +22,9 @@
 		DE4CF4511F73A0B200FC72DB /* FaceItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF4501F73A0B200FC72DB /* FaceItViewController.swift */; };
 		DE4CF4531F73A0C400FC72DB /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF4521F73A0C400FC72DB /* FaceView.swift */; };
 		DE4CF4551F73A13C00FC72DB /* FacalExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF4541F73A13C00FC72DB /* FacalExpression.swift */; };
+		DE4CF4581F74B5EA00FC72DB /* MonkeyPintchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF4571F74B5EA00FC72DB /* MonkeyPintchViewController.swift */; };
+		DE4CF45B1F75141F00FC72DB /* chomp.caf in Resources */ = {isa = PBXBuildFile; fileRef = DE4CF4591F7510BC00FC72DB /* chomp.caf */; };
+		DE4CF45C1F75141F00FC72DB /* hehehe1.caf in Resources */ = {isa = PBXBuildFile; fileRef = DE4CF45A1F7510BC00FC72DB /* hehehe1.caf */; };
 		DEC1878F1F614BD60026165F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1878E1F614BD60026165F /* AppDelegate.swift */; };
 		DEC187911F614BD60026165F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC187901F614BD60026165F /* ViewController.swift */; };
 		DEC187941F614BD60026165F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC187921F614BD60026165F /* Main.storyboard */; };
@@ -46,6 +50,8 @@
 		6D71143864F92412FFEDA85B /* Pods-ZRSwiftKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZRSwiftKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZRSwiftKitTests/Pods-ZRSwiftKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		970652CF36C8E1EFBA03B57D /* Pods_ZRSwiftKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZRSwiftKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A575CED9F679CF3FBF8B53C8 /* Pods-ZRSwiftKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZRSwiftKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZRSwiftKit/Pods-ZRSwiftKit.debug.xcconfig"; sourceTree = "<group>"; };
+		DE33E6A51F751BE500C08339 /* TickleGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickleGestureRecognizer.swift; sourceTree = "<group>"; };
+		DE33E6A81F751E4C00C08339 /* ZRSwiftKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZRSwiftKit-Bridging-Header.h"; sourceTree = "<group>"; };
 		DE4CF4391F70FD5900FC72DB /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		DE4CF43A1F70FD5900FC72DB /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		DE4CF43D1F70FD9000FC72DB /* ZRPlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZRPlaceholderTextView.swift; sourceTree = "<group>"; };
@@ -58,6 +64,9 @@
 		DE4CF4501F73A0B200FC72DB /* FaceItViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceItViewController.swift; sourceTree = "<group>"; };
 		DE4CF4521F73A0C400FC72DB /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 		DE4CF4541F73A13C00FC72DB /* FacalExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacalExpression.swift; sourceTree = "<group>"; };
+		DE4CF4571F74B5EA00FC72DB /* MonkeyPintchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonkeyPintchViewController.swift; sourceTree = "<group>"; };
+		DE4CF4591F7510BC00FC72DB /* chomp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chomp.caf; sourceTree = "<group>"; };
+		DE4CF45A1F7510BC00FC72DB /* hehehe1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hehehe1.caf; sourceTree = "<group>"; };
 		DEC1878B1F614BD60026165F /* ZRSwiftKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZRSwiftKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC1878E1F614BD60026165F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEC187901F614BD60026165F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +152,16 @@
 			path = FaceIt;
 			sourceTree = "<group>";
 		};
+		DE4CF4561F74B5D200FC72DB /* MonkeyPintch */ = {
+			isa = PBXGroup;
+			children = (
+				DE4CF4571F74B5EA00FC72DB /* MonkeyPintchViewController.swift */,
+				DE33E6A51F751BE500C08339 /* TickleGestureRecognizer.swift */,
+				DE33E6A81F751E4C00C08339 /* ZRSwiftKit-Bridging-Header.h */,
+			);
+			path = MonkeyPintch;
+			sourceTree = "<group>";
+		};
 		DE609BF91F6B733000A494E4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +174,7 @@
 		DE609BFA1F6B734000A494E4 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				DE4CF4561F74B5D200FC72DB /* MonkeyPintch */,
 				DE4CF44F1F73A09600FC72DB /* FaceIt */,
 				DE4CF43F1F70FDB200FC72DB /* PlaceholderTextView */,
 				DE4CF4411F70FDB200FC72DB /* SelfSizingTableViewCell */,
@@ -166,6 +186,8 @@
 		DE609BFB1F6B736200A494E4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				DE4CF4591F7510BC00FC72DB /* chomp.caf */,
+				DE4CF45A1F7510BC00FC72DB /* hehehe1.caf */,
 				DE4CF4441F70FDB200FC72DB /* artists.json */,
 				DEC187951F614BD60026165F /* Assets.xcassets */,
 				DEC1878E1F614BD60026165F /* AppDelegate.swift */,
@@ -286,6 +308,7 @@
 					DEC1878A1F614BD60026165F = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 8MREZQFL24;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					DEC1879E1F614BD60026165F = {
@@ -320,6 +343,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE4CF45B1F75141F00FC72DB /* chomp.caf in Resources */,
+				DE4CF45C1F75141F00FC72DB /* hehehe1.caf in Resources */,
 				DEC187991F614BD60026165F /* LaunchScreen.storyboard in Resources */,
 				DEC187961F614BD60026165F /* Assets.xcassets in Resources */,
 				DE4CF44B1F70FDB200FC72DB /* artists.json in Resources */,
@@ -441,9 +466,11 @@
 				DE4CF44A1F70FDB200FC72DB /* ArtistModel.swift in Sources */,
 				DEC1878F1F614BD60026165F /* AppDelegate.swift in Sources */,
 				DE4CF4551F73A13C00FC72DB /* FacalExpression.swift in Sources */,
+				DE33E6A61F751BE500C08339 /* TickleGestureRecognizer.swift in Sources */,
 				DE4CF43E1F70FD9000FC72DB /* ZRPlaceholderTextView.swift in Sources */,
 				DE4CF44E1F70FDB200FC72DB /* MSTableViewController.swift in Sources */,
 				DE4CF44D1F70FDB200FC72DB /* MSTableViewCell.swift in Sources */,
+				DE4CF4581F74B5EA00FC72DB /* MonkeyPintchViewController.swift in Sources */,
 				DE4CF4511F73A0B200FC72DB /* FaceItViewController.swift in Sources */,
 				DE4CF43B1F70FD5900FC72DB /* Date+Extension.swift in Sources */,
 				DE4CF4531F73A0C400FC72DB /* FaceView.swift in Sources */,
@@ -590,12 +617,15 @@
 			baseConfigurationReference = A575CED9F679CF3FBF8B53C8 /* Pods-ZRSwiftKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8MREZQFL24;
 				INFOPLIST_FILE = ZRSwiftKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiaxw32.ZRSwiftKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZRSwiftKit/Demo/MonkeyPintch/ZRSwiftKit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -605,12 +635,14 @@
 			baseConfigurationReference = 347493EE651C1BE1B457EA9C /* Pods-ZRSwiftKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8MREZQFL24;
 				INFOPLIST_FILE = ZRSwiftKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiaxw32.ZRSwiftKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZRSwiftKit/Demo/MonkeyPintch/ZRSwiftKit-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

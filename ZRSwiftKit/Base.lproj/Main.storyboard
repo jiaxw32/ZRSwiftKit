@@ -49,17 +49,29 @@
                                     <segue destination="L2o-yv-dky" kind="show" identifier="show FaceIt ViewController" id="53x-ly-U88"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pml-hA-zuC">
+                                <rect key="frame" x="67" y="429" width="240" height="64"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Monkey Pintch"/>
+                                <connections>
+                                    <segue destination="2Ox-Xv-Se6" kind="show" identifier="show Monkey Pintch" id="fda-2o-Ldi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="pml-hA-zuC" firstAttribute="top" secondItem="WvF-ge-yBd" secondAttribute="bottom" constant="23" id="2nn-om-Pc1"/>
+                            <constraint firstItem="pml-hA-zuC" firstAttribute="trailing" secondItem="WvF-ge-yBd" secondAttribute="trailing" id="3YE-CG-koS"/>
                             <constraint firstItem="bkv-uW-Kbn" firstAttribute="centerX" secondItem="4Pl-w3-aUv" secondAttribute="centerX" id="8DV-iv-Amr"/>
                             <constraint firstItem="pcf-zW-bvT" firstAttribute="leading" secondItem="4Pl-w3-aUv" secondAttribute="leadingMargin" constant="51" id="Fvn-O3-y98"/>
                             <constraint firstItem="pcf-zW-bvT" firstAttribute="trailing" secondItem="WvF-ge-yBd" secondAttribute="trailing" id="IFa-JV-OtH"/>
                             <constraint firstItem="pcf-zW-bvT" firstAttribute="top" secondItem="bkv-uW-Kbn" secondAttribute="bottom" constant="45" id="IpX-Lk-mlI"/>
                             <constraint firstItem="WvF-ge-yBd" firstAttribute="top" secondItem="pcf-zW-bvT" secondAttribute="bottom" constant="45" id="LAX-mT-He1"/>
                             <constraint firstItem="pcf-zW-bvT" firstAttribute="height" secondItem="bkv-uW-Kbn" secondAttribute="height" id="Lrz-F6-U8b"/>
+                            <constraint firstItem="pml-hA-zuC" firstAttribute="height" secondItem="WvF-ge-yBd" secondAttribute="height" id="TX1-re-qPL"/>
                             <constraint firstItem="WvF-ge-yBd" firstAttribute="height" secondItem="pcf-zW-bvT" secondAttribute="height" id="ToT-yp-v8o"/>
                             <constraint firstItem="pcf-zW-bvT" firstAttribute="centerX" secondItem="4Pl-w3-aUv" secondAttribute="centerX" id="btP-W9-4qA"/>
+                            <constraint firstItem="pml-hA-zuC" firstAttribute="leading" secondItem="WvF-ge-yBd" secondAttribute="leading" id="cfh-QZ-1q1"/>
                             <constraint firstItem="bkv-uW-Kbn" firstAttribute="top" secondItem="IaY-s2-J7N" secondAttribute="bottom" constant="60" id="dKL-yD-KbT"/>
                             <constraint firstItem="bkv-uW-Kbn" firstAttribute="leading" secondItem="4Pl-w3-aUv" secondAttribute="leadingMargin" constant="52" id="gGB-fF-w9Y"/>
                             <constraint firstItem="pcf-zW-bvT" firstAttribute="leading" secondItem="WvF-ge-yBd" secondAttribute="leading" id="pkJ-eu-Cl2"/>
@@ -121,10 +133,86 @@
             </objects>
             <point key="canvasLocation" x="1142" y="-451"/>
         </scene>
-        <!--Face It View Controller-->
+        <!--Monkey Pintch-->
+        <scene sceneID="dam-KY-wXy">
+            <objects>
+                <viewController title="Monkey Pintch" id="2Ox-Xv-Se6" customClass="MonkeyPintchViewController" customModule="ZRSwiftKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X3I-Vp-8VQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="7bz-17-wJi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c5R-0q-oUV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="monkey" translatesAutoresizingMaskIntoConstraints="NO" id="qXu-Dh-Tf7">
+                                <rect key="frame" x="57" y="90" width="252" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Z2k-ol-onk" appends="YES" id="wkt-ks-G87"/>
+                                    <outletCollection property="gestureRecognizers" destination="Oyp-SD-1vY" appends="YES" id="OHB-MN-3zK"/>
+                                    <outletCollection property="gestureRecognizers" destination="XcL-yL-2o4" appends="YES" id="mjc-L5-FVp"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banana" translatesAutoresizingMaskIntoConstraints="NO" id="01c-wh-xmq">
+                                <rect key="frame" x="57" y="328" width="252" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Ypc-39-laf" appends="YES" id="rWq-b7-zgR"/>
+                                    <outletCollection property="gestureRecognizers" destination="Sc3-zt-9yq" appends="YES" id="hLL-MG-Ch8"/>
+                                    <outletCollection property="gestureRecognizers" destination="fcT-2P-LWb" appends="YES" id="z6o-vf-6CY"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fmH-e7-e0S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Ypc-39-laf">
+                    <connections>
+                        <action selector="handlePanWithRecognizer:" destination="2Ox-Xv-Se6" id="r7q-ft-caF"/>
+                        <outlet property="delegate" destination="2Ox-Xv-Se6" id="3ft-Y5-zJM"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="Sc3-zt-9yq">
+                    <connections>
+                        <action selector="handlePinchWithRecognizer:" destination="2Ox-Xv-Se6" id="Kkm-Gx-asd"/>
+                        <outlet property="delegate" destination="2Ox-Xv-Se6" id="zlG-Um-nPw"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <pinchGestureRecognizer id="Z2k-ol-onk">
+                    <connections>
+                        <action selector="handlePinchWithRecognizer:" destination="2Ox-Xv-Se6" id="L29-ZW-Lx2"/>
+                        <outlet property="delegate" destination="2Ox-Xv-Se6" id="osi-1J-7UD"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="Oyp-SD-1vY">
+                    <connections>
+                        <action selector="handleRotateWithRecognizer:" destination="2Ox-Xv-Se6" id="fsc-c5-0ES"/>
+                        <outlet property="delegate" destination="2Ox-Xv-Se6" id="MKj-qg-BYp"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <rotationGestureRecognizer id="fcT-2P-LWb">
+                    <connections>
+                        <action selector="handleRotateWithRecognizer:" destination="2Ox-Xv-Se6" id="59N-Cy-YS4"/>
+                        <outlet property="delegate" destination="2Ox-Xv-Se6" id="uni-pQ-ZPf"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="XcL-yL-2o4">
+                    <connections>
+                        <action selector="handlePanWithRecognizer:" destination="2Ox-Xv-Se6" id="9H7-69-m8v"/>
+                        <outlet property="delegate" destination="2Ox-Xv-Se6" id="dgv-3S-VxV"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="384.80000000000001" y="929.68515742128943"/>
+        </scene>
+        <!--FaceIt-->
         <scene sceneID="FGx-0H-Nsq">
             <objects>
-                <viewController id="L2o-yv-dky" customClass="FaceItViewController" customModule="ZRSwiftKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="FaceIt" id="L2o-yv-dky" customClass="FaceItViewController" customModule="ZRSwiftKit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1Ns-Cm-QMo"/>
                         <viewControllerLayoutGuide type="bottom" id="MhI-GH-Rcp"/>
@@ -280,4 +368,8 @@
             <point key="canvasLocation" x="1142" y="206"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="banana" width="175" height="175"/>
+        <image name="monkey" width="168" height="168"/>
+    </resources>
 </document>
