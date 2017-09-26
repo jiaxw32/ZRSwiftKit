@@ -22,59 +22,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkv-uW-Kbn">
-                                <rect key="frame" x="68" y="124" width="240" height="64"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="PlaceholderTextView"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="64I-MC-Yt6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcf-zW-bvT">
-                                <rect key="frame" x="67" y="233" width="240" height="64"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lId-2m-lqj">
+                                <rect key="frame" x="105" y="175" width="164" height="316"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkv-uW-Kbn">
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="64"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="PlaceholderTextView"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="64I-MC-Yt6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcf-zW-bvT">
+                                        <rect key="frame" x="0.0" y="84" width="164" height="64"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="pgu-EB-YJm"/>
+                                        </constraints>
+                                        <state key="normal" title="SelfSizingTableViewCell"/>
+                                        <connections>
+                                            <segue destination="RQJ-D6-ha4" kind="show" id="Akv-oZ-4Gl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvF-ge-yBd">
+                                        <rect key="frame" x="0.0" y="168" width="164" height="64"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="FaceItDemo"/>
+                                        <connections>
+                                            <segue destination="T8z-WH-gYF" kind="presentation" identifier="emotion" id="Qoa-Kt-PFh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pml-hA-zuC">
+                                        <rect key="frame" x="0.0" y="252" width="164" height="64"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Monkey Pintch"/>
+                                        <connections>
+                                            <segue destination="2Ox-Xv-Se6" kind="show" identifier="show Monkey Pintch" id="fda-2o-Ldi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="pgu-EB-YJm"/>
+                                    <constraint firstItem="pcf-zW-bvT" firstAttribute="height" secondItem="bkv-uW-Kbn" secondAttribute="height" id="V3P-ry-iSi"/>
+                                    <constraint firstItem="WvF-ge-yBd" firstAttribute="height" secondItem="pcf-zW-bvT" secondAttribute="height" id="lCd-hL-9jK"/>
+                                    <constraint firstItem="pml-hA-zuC" firstAttribute="height" secondItem="WvF-ge-yBd" secondAttribute="height" id="qES-Ad-ywG"/>
                                 </constraints>
-                                <state key="normal" title="SelfSizingTableViewCell"/>
-                                <connections>
-                                    <segue destination="RQJ-D6-ha4" kind="show" id="Akv-oZ-4Gl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvF-ge-yBd">
-                                <rect key="frame" x="67" y="342" width="240" height="64"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="FaceItDemo"/>
-                                <connections>
-                                    <segue destination="L2o-yv-dky" kind="show" identifier="show FaceIt ViewController" id="53x-ly-U88"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pml-hA-zuC">
-                                <rect key="frame" x="67" y="429" width="240" height="64"/>
-                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Monkey Pintch"/>
-                                <connections>
-                                    <segue destination="2Ox-Xv-Se6" kind="show" identifier="show Monkey Pintch" id="fda-2o-Ldi"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pml-hA-zuC" firstAttribute="top" secondItem="WvF-ge-yBd" secondAttribute="bottom" constant="23" id="2nn-om-Pc1"/>
-                            <constraint firstItem="pml-hA-zuC" firstAttribute="trailing" secondItem="WvF-ge-yBd" secondAttribute="trailing" id="3YE-CG-koS"/>
-                            <constraint firstItem="bkv-uW-Kbn" firstAttribute="centerX" secondItem="4Pl-w3-aUv" secondAttribute="centerX" id="8DV-iv-Amr"/>
-                            <constraint firstItem="pcf-zW-bvT" firstAttribute="leading" secondItem="4Pl-w3-aUv" secondAttribute="leadingMargin" constant="51" id="Fvn-O3-y98"/>
-                            <constraint firstItem="pcf-zW-bvT" firstAttribute="trailing" secondItem="WvF-ge-yBd" secondAttribute="trailing" id="IFa-JV-OtH"/>
-                            <constraint firstItem="pcf-zW-bvT" firstAttribute="top" secondItem="bkv-uW-Kbn" secondAttribute="bottom" constant="45" id="IpX-Lk-mlI"/>
-                            <constraint firstItem="WvF-ge-yBd" firstAttribute="top" secondItem="pcf-zW-bvT" secondAttribute="bottom" constant="45" id="LAX-mT-He1"/>
-                            <constraint firstItem="pcf-zW-bvT" firstAttribute="height" secondItem="bkv-uW-Kbn" secondAttribute="height" id="Lrz-F6-U8b"/>
-                            <constraint firstItem="pml-hA-zuC" firstAttribute="height" secondItem="WvF-ge-yBd" secondAttribute="height" id="TX1-re-qPL"/>
-                            <constraint firstItem="WvF-ge-yBd" firstAttribute="height" secondItem="pcf-zW-bvT" secondAttribute="height" id="ToT-yp-v8o"/>
-                            <constraint firstItem="pcf-zW-bvT" firstAttribute="centerX" secondItem="4Pl-w3-aUv" secondAttribute="centerX" id="btP-W9-4qA"/>
-                            <constraint firstItem="pml-hA-zuC" firstAttribute="leading" secondItem="WvF-ge-yBd" secondAttribute="leading" id="cfh-QZ-1q1"/>
-                            <constraint firstItem="bkv-uW-Kbn" firstAttribute="top" secondItem="IaY-s2-J7N" secondAttribute="bottom" constant="60" id="dKL-yD-KbT"/>
-                            <constraint firstItem="bkv-uW-Kbn" firstAttribute="leading" secondItem="4Pl-w3-aUv" secondAttribute="leadingMargin" constant="52" id="gGB-fF-w9Y"/>
-                            <constraint firstItem="pcf-zW-bvT" firstAttribute="leading" secondItem="WvF-ge-yBd" secondAttribute="leading" id="pkJ-eu-Cl2"/>
+                            <constraint firstItem="lId-2m-lqj" firstAttribute="centerX" secondItem="4Pl-w3-aUv" secondAttribute="centerX" id="VgI-Un-Cn8"/>
+                            <constraint firstItem="lId-2m-lqj" firstAttribute="centerY" secondItem="4Pl-w3-aUv" secondAttribute="centerY" id="oNi-KA-ef0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Main" id="ESW-7K-TTL"/>
@@ -207,7 +204,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="384.80000000000001" y="929.68515742128943"/>
+            <point key="canvasLocation" x="204" y="-580"/>
         </scene>
         <!--FaceIt-->
         <scene sceneID="FGx-0H-Nsq">
@@ -247,13 +244,87 @@
                             <constraint firstItem="Bf8-Dq-nDC" firstAttribute="top" secondItem="5Mx-c4-MKf" secondAttribute="top" id="dn2-qX-kNv"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="2f7-0m-7Lj"/>
                     <connections>
                         <outlet property="faceView" destination="Bf8-Dq-nDC" id="FhX-80-C8E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sVz-dM-PUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1142" y="928"/>
+            <point key="canvasLocation" x="3593" y="1406"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="ybc-Lg-2bQ">
+            <objects>
+                <splitViewController id="T8z-WH-gYF" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="fEi-E3-jtG" kind="relationship" relationship="masterViewController" id="HWo-Hs-CzB"/>
+                        <segue destination="d2K-Q2-hZV" kind="relationship" relationship="detailViewController" id="p8s-8W-sbR"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PQg-J0-1nD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1426" y="1029"/>
+        </scene>
+        <!--Emotions-->
+        <scene sceneID="MzX-Ey-mvT">
+            <objects>
+                <viewController id="PXT-fr-vxa" customClass="EmotionViewController" customModule="ZRSwiftKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rBp-SI-zMv"/>
+                        <viewControllerLayoutGuide type="bottom" id="nXi-FI-1Kw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wQN-zr-DJq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="fAq-xc-1zY">
+                                <rect key="frame" x="118" y="211" width="138" height="244"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8r-wU-Tyx">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="Sad"/>
+                                        <connections>
+                                            <segue destination="L2o-yv-dky" kind="showDetail" identifier="sad" id="QKr-rG-xAu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="756-3Q-RV0">
+                                        <rect key="frame" x="0.0" y="92" width="138" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="Worried"/>
+                                        <connections>
+                                            <segue destination="L2o-yv-dky" kind="showDetail" identifier="worried" id="oqQ-7J-apD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJx-sZ-ZjK">
+                                        <rect key="frame" x="0.0" y="184" width="138" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal" title="Happy"/>
+                                        <connections>
+                                            <segue destination="L2o-yv-dky" kind="showDetail" identifier="happy" id="vtc-KB-E3T"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fAq-xc-1zY" firstAttribute="centerX" secondItem="wQN-zr-DJq" secondAttribute="centerX" id="PYs-cg-c8b"/>
+                            <constraint firstItem="fAq-xc-1zY" firstAttribute="centerY" secondItem="wQN-zr-DJq" secondAttribute="centerY" id="UOn-Az-Yjk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Emotions" id="2xZ-Zi-a2C">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="fWL-qj-bbO">
+                            <connections>
+                                <action selector="actionCancel:" destination="PXT-fr-vxa" id="nc1-hN-efg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kkz-df-ckW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3592.8000000000002" y="716.49175412293857"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8AF-T1-gXX">
@@ -367,9 +438,48 @@
             </objects>
             <point key="canvasLocation" x="1142" y="206"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="k3m-kM-MhI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fEi-E3-jtG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GxF-ny-qqM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PXT-fr-vxa" kind="relationship" relationship="rootViewController" id="otq-Z4-jBQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3c-pQ-vGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2630" y="718"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qf1-Hy-qkJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d2K-Q2-hZV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oZ7-Dz-uSH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="L2o-yv-dky" kind="relationship" relationship="rootViewController" id="f0v-sM-ZNk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FGb-Vz-Y2Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2630" y="1407"/>
+        </scene>
     </scenes>
     <resources>
         <image name="banana" width="175" height="175"/>
         <image name="monkey" width="168" height="168"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="oqQ-7J-apD"/>
+    </inferredMetricsTieBreakers>
 </document>

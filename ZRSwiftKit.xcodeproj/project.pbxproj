@@ -25,6 +25,7 @@
 		DE4CF4581F74B5EA00FC72DB /* MonkeyPintchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4CF4571F74B5EA00FC72DB /* MonkeyPintchViewController.swift */; };
 		DE4CF45B1F75141F00FC72DB /* chomp.caf in Resources */ = {isa = PBXBuildFile; fileRef = DE4CF4591F7510BC00FC72DB /* chomp.caf */; };
 		DE4CF45C1F75141F00FC72DB /* hehehe1.caf in Resources */ = {isa = PBXBuildFile; fileRef = DE4CF45A1F7510BC00FC72DB /* hehehe1.caf */; };
+		DE876E7D1F79F0DD0006036D /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE876E7C1F79F0DD0006036D /* EmotionViewController.swift */; };
 		DEC1878F1F614BD60026165F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1878E1F614BD60026165F /* AppDelegate.swift */; };
 		DEC187911F614BD60026165F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC187901F614BD60026165F /* ViewController.swift */; };
 		DEC187941F614BD60026165F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEC187921F614BD60026165F /* Main.storyboard */; };
@@ -67,6 +68,7 @@
 		DE4CF4571F74B5EA00FC72DB /* MonkeyPintchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonkeyPintchViewController.swift; sourceTree = "<group>"; };
 		DE4CF4591F7510BC00FC72DB /* chomp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chomp.caf; sourceTree = "<group>"; };
 		DE4CF45A1F7510BC00FC72DB /* hehehe1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hehehe1.caf; sourceTree = "<group>"; };
+		DE876E7C1F79F0DD0006036D /* EmotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
 		DEC1878B1F614BD60026165F /* ZRSwiftKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZRSwiftKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC1878E1F614BD60026165F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEC187901F614BD60026165F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				DE4CF4501F73A0B200FC72DB /* FaceItViewController.swift */,
 				DE4CF4521F73A0C400FC72DB /* FaceView.swift */,
 				DE4CF4541F73A13C00FC72DB /* FacalExpression.swift */,
+				DE876E7C1F79F0DD0006036D /* EmotionViewController.swift */,
 			);
 			path = FaceIt;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE876E7D1F79F0DD0006036D /* EmotionViewController.swift in Sources */,
 				DE4CF43C1F70FD5900FC72DB /* String+Extension.swift in Sources */,
 				DE4CF4481F70FDB200FC72DB /* PlaceholderTextViewController.swift in Sources */,
 				DEC187911F614BD60026165F /* ViewController.swift in Sources */,
